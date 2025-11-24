@@ -129,7 +129,7 @@
             // giris
             // 
             this.giris.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.giris.Location = new System.Drawing.Point(111, 182);
+            this.giris.Location = new System.Drawing.Point(192, 183);
             this.giris.Name = "giris";
             this.giris.Size = new System.Drawing.Size(128, 33);
             this.giris.TabIndex = 12;
