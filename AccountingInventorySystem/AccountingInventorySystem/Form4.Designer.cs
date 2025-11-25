@@ -95,13 +95,27 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.musteriislemleri.SuspendLayout();
             this.stokislemleri.SuspendLayout();
+            this.cariislemler.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -226,12 +240,25 @@
             // 
             // cariislemler
             // 
-            this.cariislemler.Location = new System.Drawing.Point(4, 22);
+            this.cariislemler.Controls.Add(this.dataGridView3);
+            this.cariislemler.Controls.Add(this.button5);
+            this.cariislemler.Controls.Add(this.label27);
+            this.cariislemler.Controls.Add(this.comboBox6);
+            this.cariislemler.Controls.Add(this.label26);
+            this.cariislemler.Controls.Add(this.label25);
+            this.cariislemler.Controls.Add(this.comboBox3);
+            this.cariislemler.Controls.Add(this.label24);
+            this.cariislemler.Controls.Add(this.textBox14);
+            this.cariislemler.Controls.Add(this.label23);
+            this.cariislemler.Controls.Add(this.textBox12);
+            this.cariislemler.Controls.Add(this.label22);
+            this.cariislemler.Location = new System.Drawing.Point(4, 23);
             this.cariislemler.Name = "cariislemler";
-            this.cariislemler.Size = new System.Drawing.Size(508, 680);
+            this.cariislemler.Size = new System.Drawing.Size(508, 679);
             this.cariislemler.TabIndex = 2;
             this.cariislemler.Text = "Cari İşlemler";
             this.cariislemler.UseVisualStyleBackColor = true;
+            this.cariislemler.Click += new System.EventHandler(this.cariislemler_Click);
             // 
             // satisislemleri
             // 
@@ -773,6 +800,109 @@
             this.button4.Text = "Müşteri Sil";
             this.button4.UseVisualStyleBackColor = true;
             // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(103, 22);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(156, 20);
+            this.textBox12.TabIndex = 3;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(38, 22);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(45, 14);
+            this.label22.TabIndex = 2;
+            this.label22.Text = "Ürün ID";
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(103, 48);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(156, 20);
+            this.textBox14.TabIndex = 5;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(25, 48);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(58, 14);
+            this.label23.TabIndex = 4;
+            this.label23.Text = "Alış Fiyatıı";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(21, 74);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(62, 14);
+            this.label24.TabIndex = 6;
+            this.label24.Text = "Kar Miktarı";
+            this.label24.Click += new System.EventHandler(this.label24_Click);
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(103, 74);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 22);
+            this.comboBox3.TabIndex = 7;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(28, 136);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(58, 14);
+            this.label25.TabIndex = 8;
+            this.label25.Text = "Satış Fiyatı";
+            this.label25.Click += new System.EventHandler(this.label25_Click);
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(103, 105);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(121, 22);
+            this.comboBox6.TabIndex = 11;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(15, 105);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(68, 14);
+            this.label26.TabIndex = 10;
+            this.label26.Text = "Vergi Miktarı";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(100, 136);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(79, 14);
+            this.label27.TabIndex = 12;
+            this.label27.Text = "Sonra yazılacak";
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(266, 159);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(99, 33);
+            this.button5.TabIndex = 19;
+            this.button5.Text = "Kaydet";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(18, 207);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(478, 433);
+            this.dataGridView3.TabIndex = 27;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
@@ -793,12 +923,15 @@
             this.musteriislemleri.PerformLayout();
             this.stokislemleri.ResumeLayout(false);
             this.stokislemleri.PerformLayout();
+            this.cariislemler.ResumeLayout(false);
+            this.cariislemler.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -872,5 +1005,17 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.Button button5;
     }
 }

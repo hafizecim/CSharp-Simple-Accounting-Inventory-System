@@ -41,5 +41,25 @@ namespace AccountingInventorySystem
         {
 
         }
+
+        private void label24_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox17_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label25_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cariislemler_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
