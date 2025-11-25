@@ -21,5 +21,25 @@ namespace AccountingInventorySystem
         {
 
         }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void musteri_ekle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void musteri_sil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void musteri_duzenle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
