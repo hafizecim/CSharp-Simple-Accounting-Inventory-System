@@ -107,15 +107,33 @@
             this.label27 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.label31 = new System.Windows.Forms.Label();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.musteriislemleri.SuspendLayout();
             this.stokislemleri.SuspendLayout();
             this.cariislemler.SuspendLayout();
+            this.satisislemleri.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -262,12 +280,27 @@
             // 
             // satisislemleri
             // 
-            this.satisislemleri.Location = new System.Drawing.Point(4, 22);
+            this.satisislemleri.Controls.Add(this.dataGridView4);
+            this.satisislemleri.Controls.Add(this.button6);
+            this.satisislemleri.Controls.Add(this.textBox19);
+            this.satisislemleri.Controls.Add(this.label32);
+            this.satisislemleri.Controls.Add(this.textBox20);
+            this.satisislemleri.Controls.Add(this.label33);
+            this.satisislemleri.Controls.Add(this.numericUpDown2);
+            this.satisislemleri.Controls.Add(this.label31);
+            this.satisislemleri.Controls.Add(this.numericUpDown1);
+            this.satisislemleri.Controls.Add(this.label30);
+            this.satisislemleri.Controls.Add(this.textBox18);
+            this.satisislemleri.Controls.Add(this.label29);
+            this.satisislemleri.Controls.Add(this.textBox17);
+            this.satisislemleri.Controls.Add(this.label28);
+            this.satisislemleri.Location = new System.Drawing.Point(4, 23);
             this.satisislemleri.Name = "satisislemleri";
-            this.satisislemleri.Size = new System.Drawing.Size(508, 680);
+            this.satisislemleri.Size = new System.Drawing.Size(508, 679);
             this.satisislemleri.TabIndex = 3;
             this.satisislemleri.Text = "Satış İşlemleri";
             this.satisislemleri.UseVisualStyleBackColor = true;
+            this.satisislemleri.Click += new System.EventHandler(this.satisislemleri_Click);
             // 
             // musteri_ekle
             // 
@@ -681,6 +714,7 @@
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(213, 22);
             this.textBox15.TabIndex = 3;
+            this.textBox15.TextChanged += new System.EventHandler(this.textBox15_TextChanged);
             // 
             // label20
             // 
@@ -690,6 +724,7 @@
             this.label20.Size = new System.Drawing.Size(56, 15);
             this.label20.TabIndex = 2;
             this.label20.Text = "Ürün Adı";
+            this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // textBox16
             // 
@@ -815,6 +850,7 @@
             this.label22.Size = new System.Drawing.Size(45, 14);
             this.label22.TabIndex = 2;
             this.label22.Text = "Ürün ID";
+            this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
             // textBox14
             // 
@@ -903,6 +939,119 @@
             this.dataGridView3.Size = new System.Drawing.Size(478, 433);
             this.dataGridView3.TabIndex = 27;
             // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(130, 17);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(212, 20);
+            this.textBox17.TabIndex = 5;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(76, 17);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(45, 14);
+            this.label28.TabIndex = 4;
+            this.label28.Text = "Ürün ID";
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(130, 43);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(212, 20);
+            this.textBox18.TabIndex = 7;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(73, 46);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(48, 14);
+            this.label29.TabIndex = 6;
+            this.label29.Text = "Ürün Adı";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(11, 74);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(110, 14);
+            this.label30.TabIndex = 8;
+            this.label30.Text = "Stoktaki Ürün Miktarı";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(130, 72);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 20);
+            this.numericUpDown1.TabIndex = 10;
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Location = new System.Drawing.Point(130, 103);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(212, 20);
+            this.numericUpDown2.TabIndex = 12;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(19, 105);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(102, 14);
+            this.label31.TabIndex = 11;
+            this.label31.Text = "Satılan Ürün Miktarı";
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(129, 160);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(213, 20);
+            this.textBox19.TabIndex = 16;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(70, 163);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(52, 14);
+            this.label32.TabIndex = 15;
+            this.label32.Text = "Şirket Adı";
+            // 
+            // textBox20
+            // 
+            this.textBox20.Location = new System.Drawing.Point(129, 132);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(213, 20);
+            this.textBox20.TabIndex = 14;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(64, 135);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(57, 14);
+            this.label33.TabIndex = 13;
+            this.label33.Text = "Müşteri ID";
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(243, 189);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(99, 33);
+            this.button6.TabIndex = 20;
+            this.button6.Text = "Satış Yap";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(14, 229);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.Size = new System.Drawing.Size(478, 433);
+            this.dataGridView4.TabIndex = 28;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
@@ -925,6 +1074,8 @@
             this.stokislemleri.PerformLayout();
             this.cariislemler.ResumeLayout(false);
             this.cariislemler.PerformLayout();
+            this.satisislemleri.ResumeLayout(false);
+            this.satisislemleri.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -932,6 +1083,9 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1017,5 +1171,19 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.Button button6;
     }
 }
