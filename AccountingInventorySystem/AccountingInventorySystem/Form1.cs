@@ -32,7 +32,14 @@ namespace AccountingInventorySystem
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (sifre_goster.Checked == true)
+            {
+                sifre.PasswordChar = '\0';
+            }
+            else
+            {
+                sifre.PasswordChar = '*';
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
