@@ -27,7 +27,7 @@ namespace AccountingInventorySystem
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            sifre.PasswordChar = '*';
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -68,6 +68,13 @@ namespace AccountingInventorySystem
                 MessageBox.Show("Bilgileri tekrar kontorl ediniz.");
             }
             con.Close();
+        }
+
+        private void kayit_ol_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.Show();
+            this.Hide();    
         }
     }
 }

@@ -130,6 +130,7 @@
             this.kayit_ol.TabIndex = 8;
             this.kayit_ol.TabStop = true;
             this.kayit_ol.Text = "Kayıt Ol";
+            this.kayit_ol.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.kayit_ol_LinkClicked);
             // 
             // Form1
             // 

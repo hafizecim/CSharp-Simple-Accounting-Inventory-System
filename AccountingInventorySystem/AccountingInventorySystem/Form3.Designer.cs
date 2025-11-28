@@ -82,6 +82,7 @@
             this.giris.TabIndex = 24;
             this.giris.Text = "Kayıt Ol";
             this.giris.UseVisualStyleBackColor = true;
+            this.giris.Click += new System.EventHandler(this.giris_Click);
             // 
             // textBox4
             // 
