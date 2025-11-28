@@ -76,5 +76,12 @@ namespace AccountingInventorySystem
             form3.Show();
             this.Hide();    
         }
+
+        private void sifremi_unuttum_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
+            this.Hide();
+        }
     }
 }
