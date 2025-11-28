@@ -54,7 +54,9 @@ namespace AccountingInventorySystem
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Close();
+            // this.Close();
+            Application.Exit();
+
         }
 
         private void giris_Click(object sender, EventArgs e)
